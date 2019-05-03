@@ -1,0 +1,96 @@
+body
+{
+	margin: 0;
+}
+
+span:hover
+{
+	background-color: gold;
+}
+
+form
+{
+	border:1px solid;
+	padding: 10px;
+  	font-size: 20px;
+  	width: 300px;
+}
+
+label 
+{
+	width: 130px;
+	float: left;
+}
+
+#p1
+{
+	position: absolute;
+	width: 24%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15pt;
+	text-shadow: 1px 1px 1px black;
+}
+#p2
+{
+	position: absolute;
+	left: 24%;
+	width: 24%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15pt;
+	text-shadow: 1px 1px 1px black;
+}
+#p3
+{
+	position: absolute;
+	left: 48%;
+	width: 24%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15pt;
+	text-shadow: 1px 1px 1px black;
+}
+#p4
+{
+	position: absolute;
+	left: 72%;
+	width: 24%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15pt;
+	text-shadow: 1px 1px 1px black;
+}
+
+.bouton:hover
+{
+	border: solid;
+}
+
+#header
+{
+	width: 98%;
+	background-color: white;
+	border-bottom: double;
+	position: sticky;
+	top: 0;
+	padding: 1%;
+	word-spacing: 5px;
+}
+
+#categorie
+{
+	margin-left: 2%;
+}
+
+#panier
+{
+	float: right;
+	margin-right: 2%;
+}
+
+#compte
+{
+	float: right;
+	margin-right: 2%;
+}

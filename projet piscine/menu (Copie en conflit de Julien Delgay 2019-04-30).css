@@ -1,0 +1,54 @@
+h1{
+	background-color:#9DC1E3;
+	color: white;
+	padding:40px;
+	text-align: center;
+	border: 2px solid #0D4B85;
+	text-shadow: 1px 1px 1px black;
+	font-family:georgia, geneva, monospace;
+	text-decoration: blink;
+}
+#nav{
+	background-color:#3cadda;
+	border-bottom: solid;
+	position: fixed;
+	width: 100%;
+	top:0;
+	left:0;
+	padding: 1%;
+	text-align: center;
+	word-spacing: 10px;
+}
+
+#categorie{
+	float: left;
+	padding:45px;
+}
+#venteFlash{
+	float: left;
+	padding:45px;
+}
+#vendre{
+	float: left;
+	padding:45px;
+}
+#compte{
+	float: left;
+	padding:45px;
+}
+#panier{
+	float: left;
+	padding:45px;
+}
+#admin{
+	float: left;
+	padding:45px;
+}
+
+
+
+.navbar {   background:#6ab446; } .nav-link, 
+.navbar-brand {   color: blue;   cursor: pointer; } 
+.nav-link {   margin-right: 1em !important; } 
+.nav-link:hover {   color: #000; } 
+.navbar-collapse {   justify-content: flex-end; } 

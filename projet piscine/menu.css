@@ -1,0 +1,218 @@
+h1{
+	background-color:#9DC1E3;
+	color: white;
+	padding:40px;
+	text-align: center;
+	border: 2px solid #0D4B85;
+	text-shadow: 1px 1px 1px black;
+	font-family:georgia, geneva, monospace;
+	text-decoration: blink;
+}
+
+form
+{
+	border:1px solid;
+	padding: 10px;
+  	font-size: 20px;
+  	width: 300px;
+}
+
+label 
+{
+	width: 130px;
+	float: left;
+}
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li > a{
+	padding : 20px 30px;
+	color: #FFF;
+}
+
+nav{
+	width: 100%;
+	background-color: #424558;
+}
+
+nav > ul::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.sous-cat{
+	border-bottom: 1px solid #CCC;
+}
+
+nav li: hover .sous-cat{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 10000;
+}
+
+
+.sous-cat li a{
+	padding: 15px 30 px;
+	font-size: 15px;
+	color: #222233;
+	width: 150px;
+}
+
+.sous-cat:hover{
+	border-top: 5px solid #fc33ff;
+	background-color: #fc33ff;
+}
+
+.sous-best{
+	border-bottom: 1px solid #CCC;
+}
+
+nav li: hover .sous-best{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 10000;
+}
+
+
+.sous-best li a{
+	padding: 15px 30 px;
+	font-size: 15px;
+	color: #222233;
+	width: 150px;
+}
+
+.sous-best:hover{
+	border-top: 5px solid #fc33ff;
+	background-color: #fc33ff;
+}
+
+.sous-ad{
+	border-bottom: 1px solid #CCC;
+}
+
+nav li: hover .sous-ad{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 10000;
+}
+
+
+.sous-ad li a{
+	padding: 15px 10 px;
+	font-size: 15px;
+	color: #222233;
+	width: 150px;
+}
+
+.sous-ad:hover{
+	border-top: 5px solid #fc33ff;
+	background-color: #fc33ff;
+}
+
+#nav-logo{
+	line-height:20px;
+    background-color: #eeeeee;
+    height: 508px;
+    width: 100px;
+    float: left;
+    padding:5px;
+}
+
+#nav-shop{
+	line-height:230px;
+	text-align: 300px;
+    background-color: #bbbb;
+    float: 300px;
+    padding:5px;
+    border: 1px dotted #999;
+  	border-radius: 0;
+	left:400px;
+	-webkit-appearance: none;
+	font-family : inherit;
+  	font-size   : 100%;
+  	color: blue;
+}
+
+.categorie .sous-cat{
+	background-color: #337dff;
+}
+
+.categorie .sous-cat li:hover{
+	background-color: #33ffff;
+}
+
+.venteFlash .sous-best{
+	background-color: #337dff;
+}
+
+.venteFlash .sous-best li:hover{
+	background-color: #33ffff;
+}
+
+.admin .sous-ad{
+	background-color: #337dff;
+}
+
+.admin .sous-ad li:hover{
+	background-color: #33ffff;
+}
+
+#categorie{
+	float: left;
+	padding:45px;
+}
+#venteFlash{
+	float: left;
+	padding:45px;
+}
+#vendre{
+	float: left;
+	padding:45px;
+}
+#compte{
+	float: left;
+	padding:45px;
+}
+#panier{
+	float: left;
+	padding:45px;
+}
+#admin{
+	float: left;
+	padding:45px;
+}
+
+
+
+.navbar {   background:#6ab446; } .nav-link, 
+.navbar-brand {   color: blue;   cursor: pointer; } 
+.nav-link {   margin-right: 1em !important; } 
+.nav-fill:hover {   color: #000; } 
+.navbar-collapse {   justify-content: flex-end; } 
