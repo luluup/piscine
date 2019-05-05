@@ -1,10 +1,29 @@
-<?php
-$codevendeur   = isset($_POST["codevendeur"])?$_POST["codevendeur"] : "";   
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vendeur ajoute !</title>
+</head>
+<body>
+  <div id="header">
+               <a href="eceAmazon.html"><img src="img/logo.png"></a>
+                <span id="categorie"><a href="categorie.html"><img src="boutons/button_categorie.png"></a></span>
+                 <span id="venteFlash"><a href="venteFlash.html"><img src="boutons/button_vente-flash.png"></a></span>
+                 <span id="vendre"><a href="connexionvendeur.php"><img src="boutons/button_vendre.png"></a></span>
+                 <span id="panier"><a href="panier.html"><img src="boutons/button_panier.png"></a></span>
+                 <span id="compte"><a href="connexionclient.php"><img src="boutons/button_mon-compte.png"></a></span>
+                 <span id="admin"><a href="connexionadmin.php"><img src="boutons/button_admin.png"></a></span>
+                 <span id="admindec"><a href="deconnexion.php"><img src="boutons/button_deconnexion.png"></a></span>
+            </div>
+            <div align="left">
+</body>
+</html>
+
+<?php   
 $nom   = isset($_POST["nom"])?$_POST["nom"] : "";     
 $pseudo    = isset($_POST["pseudo"])?$_POST["pseudo"] : "";     
 $email   = isset($_POST["email"])?$_POST["email"] : ""; 
 
-echo "Code vendeur : " . $_POST['codevendeur'] . "<br>";
+
 echo "Nom : " . $_POST['nom'] . "<br>";
 echo "Pseudo : " . $_POST['pseudo'] . "<br>";
 echo "Email : " . $_POST['email'] . "<br>";
@@ -20,9 +39,7 @@ $database = "veudeurs";
 
 
 //On teste si tous les champs du formulaire vendeur sont vide
-if($codevendeur == "") 
-      {$erreur .= "Le champ Code vendeur est vide. <br>";}  
-    
+   
 if($nom == "") 
       { $erreur .= "Le champ Nom est vide. <br>";}  
 
@@ -43,13 +60,13 @@ if ($erreur == "")
             if ($db_found) 
 
             {    $sql = "SELECT * FROM vendeur";    
-               if ($codevendeur != "") 
+               if ($nom != "") 
                {     
                //on cherche le code vendeur et nom dans la bdd vendeur    
-                  $sql .= " WHERE Titre LIKE '%$codevendeur%'";     
+                  $sql .= " WHERE Nom LIKE '%$nom%'";     
                   if ($nom != "") 
                   {      
-                     $sql .= " AND Auteur LIKE '%$nom%'";     
+                     $sql .= " AND Pseudo LIKE '%$pseudo%'";     
                   }    
                }    
 
@@ -65,7 +82,7 @@ if ($erreur == "")
 
                else 
                {    
-                $sql = "INSERT INTO vendeur(codevendeur, nom, pseudo, email) VALUES('$codevendeur', '$nom', '$pseudo', '$email')";     
+                $sql = "INSERT INTO vendeur(nom, pseudo, email) VALUES('$nom', '$pseudo', '$email')";     
 
                 $result = mysqli_query($db_handle, $sql);     
 
@@ -74,12 +91,12 @@ if ($erreur == "")
                 //on affiche le vendeur ajouté     
                 $sql = "SELECT * FROM vendeur";     
 
-                if ($codevendeur != "") 
+                if ($nom != "") 
                 {     //on cherche le vendeur avec les paramètres code vendeur et nom     
-                  $sql .= " WHERE Titre LIKE '%$codevendeur%'";      
+                  $sql .= " WHERE Nom LIKE '%$nom%'";      
                   if ($nom != "") 
                   {       
-                     $sql .= " AND Auteur LIKE '%$nom%'";      
+                     $sql .= " AND Pseudo LIKE '%$pseudo%'";      
                   }     
                }     
 
@@ -87,7 +104,6 @@ if ($erreur == "")
        
           while ($data = mysqli_fetch_assoc($result)) 
             {      
-                     echo "Code vendeur : " . $_POST['codevendeur'] . "<br>";
                      echo "Nom : " . $_POST['nom'] . "<br>";
                      echo "Pseudo : " . $_POST['pseudo'] . "<br>";
                      echo "Email : " . $_POST['email'] . "<br>";
