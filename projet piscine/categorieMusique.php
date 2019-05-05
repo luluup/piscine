@@ -42,7 +42,7 @@ if ($db_found) {
 		echo "Prix : " . $data['prix'] . "<br>";
 		echo "<a href='ajout-panier.php'><img src='boutons/button_ajoutitem.png'></a></div>";
 	}
-}
+}  
 
 else {
 	echo "Database not found";
